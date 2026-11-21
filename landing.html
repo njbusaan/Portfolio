@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Nathan Busaan's personal projects in software, GIS, and technical drafting."
+        >
+        <title>Projects | Nathan Busaan</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="theme.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="site-name" href="#top">Nathan Busaan</a>
+            <div class="header-actions">
+                <nav aria-label="Project categories">
+                    <a href="github.html">GitHub</a>
+                    <a href="#gis">GIS</a>
+                    <a href="#drafting">Drafting</a>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+                    Light theme
+                </button>
+            </div>
+        </header>
+
+        <main class="page-content" id="top">
+            <section class="page-intro" aria-labelledby="page-title">
+                <p class="eyebrow">Portfolio</p>
+                <h1 id="page-title">Projects</h1>
+                <p>
+                    A summary of my personal projects in software development,
+                    geographic information systems, and technical drafting.
+                </p>
+            </section>
+
+            <section class="project-grid" aria-label="Project categories">
+                <a class="project-card project-card-link" id="github" href="github.html">
+                    <p class="project-type">Software development</p>
+                    <h2>GitHub projects</h2>
+                    <p>Code repositories, small software tools, and automation scripts.</p>
+                    <p class="project-focus"><span>Focus</span> Repositories · Tools · Automation</p>
+                    <span class="card-action">View GitHub projects <span aria-hidden="true">→</span></span>
+                </a>
+
+                <article class="project-card" id="gis">
+                    <p class="project-type">Geographic information systems</p>
+                    <h2>GIS workflows</h2>
+                    <p>Spatial data preparation, analysis, and map production.</p>
+                    <p class="project-focus"><span>Focus</span> Spatial data · Analysis · Mapping</p>
+                </article>
+
+                <article class="project-card" id="drafting">
+                    <p class="project-type">Technical design</p>
+                    <h2>Drafting examples</h2>
+                    <p>Technical drawings and layouts prepared to communicate design details.</p>
+                    <p class="project-focus"><span>Focus</span> Drawings · Layouts · Documentation</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Nathan Busaan</span>
+            <span>Software · GIS · Drafting</span>
+        </footer>
+    </body>
+</html>
