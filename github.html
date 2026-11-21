@@ -10,6 +10,7 @@
         <title>GitHub Projects | Nathan Busaan</title>
         <link rel="stylesheet" href="styles.css">
         <script src="theme.js" defer></script>
+        <script src="commits.js" defer></script>
     </head>
     <body>
         <header class="site-header">
@@ -66,6 +67,20 @@
                         rel="noopener noreferrer"
                     >View repository <span aria-hidden="true">↗</span></a>
                 </article>
+            </section>
+
+            <section class="commit-history" aria-labelledby="commit-history-title">
+                <div class="timeline-heading">
+                    <h2 id="commit-history-title">Recent public commits</h2>
+                    <a
+                        class="inline-link"
+                        href="https://github.com/njbusaan?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >View all repositories ↗</a>
+                </div>
+                <p class="timeline-status" id="timeline-status" role="status">Loading public repositories and recent commits…</p>
+                <ol class="commit-timeline" id="commit-timeline" aria-live="polite"></ol>
             </section>
         </main>
 
