@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+    if [ "$local_ref" = "refs/heads/main" ] || [ "$remote_ref" = "refs/heads/main" ]; then
+        echo "Push blocked: use a pull request to merge changes into main." >&2
+        exit 1
+    fi
+done

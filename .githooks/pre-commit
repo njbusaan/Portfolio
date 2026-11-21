@@ -1,0 +1,11 @@
+#!/bin/sh
+
+branch=$(git symbolic-ref --quiet --short HEAD) || {
+    echo "Commit blocked: create or switch to a working branch first." >&2
+    exit 1
+}
+
+if [ "$branch" = "main" ]; then
+    echo "Commit blocked: do project work on a branch and merge through a pull request." >&2
+    exit 1
+fi
